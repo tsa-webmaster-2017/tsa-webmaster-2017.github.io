@@ -206,16 +206,3 @@ h3 {
   background-size: cover;
   margin, padding: 0;
 }
-
-#diams {
-  display: table;
-  table-layout: fixed;
-}
-
-.diam {
-  width: 13.4648vw;
-  height: auto;
-}
-
-.diam#ana {
-}
