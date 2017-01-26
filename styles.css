@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+
+@font-face {
+  src: url('./fonts/Lovelo\ Black.otf');
+  font-family: 'Lovelo';
+}
+
+@font-face {
+  src: url('./fonts/Mohave.otf');
+  font-family: 'Mohave';
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('./fonts/Mohave\ Italics.otf');
+  font-family: 'Mohave';
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  src: url('./fonts/Mohave-Bold.otf');
+  font-family: 'Mohave';
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('./fonts/Mohave-Bold\ Italics.otf');
+  font-family: 'Mohave';
+  font-weight: bold;
+  font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Roboto Slab, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+a:hover {
+    color: #ff5c5c;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+.text .inner {
+  max-width: 1028px;
+}
+
+.home-page {
+  flex-flow: row wrap;
+  overflow-x: hidden;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2, h3 {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 10px 0;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sec {
+  width: 100vw;
+}
+
+.table {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80vw;
+}
+
+.parlx {
+  scroll-behavior: smooth;
+  perspective: 1px;
+  perspective-origin-x: 100%;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parlx-slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#text > img {
+  left: 18%;
+  align-self: center;
+  z-index: 2;
+  width: 60%;
+  position: absolute;
+  top: 11vh;
+}
+
+.text.first {
+  top: 60vw;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: start;
+  height: 150%;
+  padding: 90px 30px;
+  text-align: center;
+  font-family: Vollkorn;
+  background-color: white;
+}
+
+.text h1 {
+  font-family: Mohave;
+  font-weight: bold;
+  font-size: 50px;
+  color: #ff3737;
+  padding-bottom: 30px;
+}
+
+.text p {
+  font-size: 22px;
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+.base {
+  transform: translateZ(0);
+}
+
+.back1 {
+  transform: translateZ(-1px) scale(2);
+}
+
+.back2 {
+  transform: translateZ(-2px) scale(3);
+}
+
+.back3 {
+  transform: translateZ(-3px) scale(4)
+}
+
+.back4 {
+  transform: translateZ(-4px) scale(5)
+}
+
+.back5 {
+  transform: translateZ(-5px) scale(6)
+}
+
+.city img {
+  width: 100%;
+}
+
+.inner {
+  margin-bottom: 60px;
+}
+
+#back {
+  height: 45.96vw;
+  width: 100vw;
+  background-image: url(/imgs/examples/analytics-full.png);
+  background-size: cover;
+  margin, padding: 0;
+}
+
+#diams {
+  display: table;
+  table-layout: fixed;
+}
+
+.diam {
+  width: 13.4648vw;
+  height: auto;
+}
+
+.diam#ana {
+}
