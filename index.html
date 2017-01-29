@@ -4,34 +4,33 @@
 <head>
     <meta charset="utf-8">
     <title>2016 MVHS TSA</title>
-    <link rel="stylesheet" href="./styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Project for 2016 Mountain Vista TSA Webmaster">
+    <link rel="stylesheet" href="" id="pageStyle" media="all">
     <!-- <script src="https://use.fontawesome.com/25ba5b0c20.js"></script> -->
 </head>
 
 <body>
-    <div class="home-page">
-      <div class='sec top parlx'>
-        <div class='city parlx-slide back5'><img src='../imgs/city2/bg1-min.png'></div>
-        <div class='city parlx-slide back4'><img src='../imgs/city2/bg3-min.png'></div>
-        <div class='city parlx-slide back3'><img src='../imgs/city2/bg4-min.png'></div>
-        <div class='parlx-slide back3' id='text'><img src='imgs/augment_text.png'></div>
-        <div class='city parlx-slide back2'><img src='../imgs/city2/bg5-min.png'></div>
-        <div class='city parlx-slide back1'><img src='../imgs/city2/bg6-min.png'></div>
-        <div class='parlx-slide base top-slide text first'>
-          <div class='inner'>
-            <h1>WHAT IS AUGMENTED REALITY?</h1>
-            <p> Augmented reality is any technology that superimposes a computer-generated image onto a user's view of the real world. It's a broad definition, encompassing many different types of interactions, from military tactical viewports and location-specific marketing to Snapchat and Pokémon Go. AR tech is used for a variety of different purposes, and has been growing more popular in recent years with the advent of better image processing and object recognition tech.</p>
-          </div>
-          <div>
-            <h1 style='padding-bottom: 50px;'>WHAT IS IT USED FOR?</h1>
+    <div id="wrapper">
 
-        </div>
-      </div>
+
+
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src='./js/animations.js'></script>
+    <script>
+        $(document).ready(function() {
+            function loadPage(page) {
+                frame = $("#wrapper");
+                pageStyle = document.getElementById("pageStyle");
+                pageStyle.setAttribute("href", "/styles/" + page + ".css");
+                frame.load("/partials/" + page + ".html");
+            }
+            var pageName = window.location.hash.substr(1).split("&")[0] || "home";
+            loadPage(pageName);
+        });
+
+    </script>
 </body>
 
 </html>
