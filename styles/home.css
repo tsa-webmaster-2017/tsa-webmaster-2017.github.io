@@ -55,9 +55,7 @@ img {
     width: auto;
     height: auto;
 }
-.text .inner {
-    max-width: 1028px;
-}
+
 .home-page {
     flex-flow: row wrap;
     overflow-x: hidden;
@@ -123,7 +121,7 @@ h3 {
     justify-content: center;
     flex-flow: row wrap;
     align-items: start;
-    height: 150%;
+    height: 300%;
     padding: 90px 30px;
     text-align: center;
     font-family: Vollkorn;
@@ -143,6 +141,7 @@ h3 {
 }
 .base {
     transform: translateZ(0);
+    background-color: white;
 }
 .back1 {
     transform: translateZ(-1px) scale(2);
@@ -163,12 +162,18 @@ h3 {
     width: 100%;
 }
 .inner {
-    margin-bottom: 15px;
+    display: block;
+    margin-bottom: 30px;
+    max-width: 1028px;
 }
 img#ill1 {
   height: 55vh;
-  padding-bottom: 10px;
 }
+
+.ill {
+  margin-top: 5px;
+}
+
 #back {
     height: 45.96vw;
     width: 100vw;
