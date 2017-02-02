@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+@font-face {
+    src: url('../fonts/Lovelo\ Black.otf');
+    font-family: 'Lovelo';
+}
+@font-face {
+    src: url('../fonts/Mohave.otf');
+    font-family: 'Mohave';
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url('../fonts/Mohave\ Italics.otf');
+    font-family: 'Mohave';
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    src: url('../fonts/Mohave-Bold.otf');
+    font-family: 'Mohave';
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    src: url('../fonts/Mohave-Bold\ Italics.otf');
+    font-family: 'Mohave';
+    font-weight: bold;
+    font-style: italic;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Roboto Slab, sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff3737;
+    cursor: pointer;
+}
+a:hover {
+    color: #ff5c5c;
+}
+img {
+    width: auto;
+    height: auto;
+}
+
+.home-page {
+    flex-flow: row wrap;
+    overflow-x: hidden;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2,
+h3 {
+    width: 90%;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+h2 {
+    font-size: 60px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.sec {
+    width: 100vw;
+}
+.table {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 80vw;
+}
+
+#text > img {
+    left: 18%;
+    align-self: center;
+    z-index: 2;
+    width: 60%;
+    position: absolute;
+    top: 11vh;
+}
+.text.first {
+    top: 60vw;
+}
+.text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 600%;
+    padding: 45px 0;
+    font-family: Vollkorn;
+    background-color: white;
+}
+.text h3 {
+  font-size: 20px;
+}
+.text h1, .text h3 {
+  font-family: Mohave;
+  color: #ff3737;
+}
+.text h1 {
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.text p {
+    font-size: 15px;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+.inner {
+    width: 100vw;
+    display: block;
+    text-align: center;
+    max-width: 1028px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+img#ill1 {
+  height: 55vh;
+  margin: 30px 0;
+}
+
+.ill {
+  margin-top: 5px;
+}
+
+.body-ill {
+  max-width: 1024px;
+  padding: 20px 0;
+  height: auto;
+}
+
+img.header {
+  margin-top: 10vh;
+  width: 25vw;
+  height: auto;
+}
+
+li {
+  margin-top: 30px;
+}
+
+hr {
+  box-shadow: none;
+  color: black;
+  margin: 30px 0;
+}

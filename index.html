@@ -13,6 +13,10 @@
     <div id="wrapper"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
+
+      var isMobile = !!navigator.userAgent.match(/iPad|iPhone|Android|BlackBerry|Windows Phone|webOS/i);
+      console.log(isMobile);
+
         $(document).ready(function() {
             function loadPage(page) {
                 frame = $("#wrapper");
@@ -20,10 +24,9 @@
                 pageStyle.setAttribute("href", "/styles/" + page + ".css");
                 frame.load("/partials/" + page + ".html");
             }
-            var pageName = window.location.hash.substr(1).split("&")[0] || "home";
+            var pageName = window.location.hash.substr(1).split("&")[0] || (isMobile ? "mob-home" : "home");
             loadPage(pageName);
         });
-
     </script>
 </body>
 
