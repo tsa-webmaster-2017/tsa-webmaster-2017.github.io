@@ -46,7 +46,8 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: #ff3737;
+    cursor: pointer;
 }
 a:hover {
     color: #ff5c5c;
@@ -125,11 +126,16 @@ h3 {
     font-family: Vollkorn;
     background-color: white;
 }
+.text h3 {
+  font-size: 35px;
+}
+.text h1, .text h3 {
+  font-family: Mohave;
+  color: #ff3737;
+}
 .text h1 {
-    font-family: Mohave;
     font-weight: bold;
     font-size: 50px;
-    color: #ff3737;
     padding-bottom: 30px;
 }
 .text p {
@@ -174,8 +180,18 @@ img#ill1 {
   margin-top: 5px;
 }
 
+.body-ill {
+  max-width: 30vw;
+  padding: 20px 0;
+  height: auto;
+}
+
 img.header {
   margin-top: 10vh;
   width: 25vw;
   height: auto;
+}
+
+li {
+  margin-top: 30px;
 }
