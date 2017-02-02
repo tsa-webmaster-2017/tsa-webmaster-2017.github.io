@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+  background-image: url("../imgs/stardust.png");
+  background-repeat: repeat;
+  color: white;
+  font-family: 'Josefin Sans';
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  h5 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h5 {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+.gen-info {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.title {
+  -webkit-animation-duration: 2s;
+}
+
+#quote-top {
+  margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    top: 20;
+}
+
+.school, .science, .tech, .math, .chapter, .testimonials {
+  margin-top: 50px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 50px;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: orange;
+  top: 55px;
+}
