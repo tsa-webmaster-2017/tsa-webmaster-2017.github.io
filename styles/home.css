@@ -44,6 +44,7 @@ body {
     display: none;
 }
 a {
+    font-family: Vollkorn;
     text-decoration: none;
     cursor: pointer;
     color: #ff3737;
@@ -100,6 +101,7 @@ h3 {
     overflow-y: auto;
 }
 .parlx-slide {
+    transform-origin-x: 100%;
     position: absolute;
     top: 0;
     right: 0;
